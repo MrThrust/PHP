@@ -13,6 +13,7 @@ function limitText($x, $length)
   }
 }
 
+// EXAMPLE 
 $string = 'long string text long string text long string text long string text long string text long string text long string text ';
 $limitString = limitText($string , 20);
 
