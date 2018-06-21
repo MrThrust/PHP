@@ -1,21 +1,24 @@
 <?php
-//limit the output of a text string
-function limitText($x, $length)
+/*
+* limit character output from string
+*  Input: text string, Max limit 
+/
+function limitText($string, $length)
 {
-  if(strlen($x)<=$length)
+  if(strlen($string)<=$length)
   {
-    return $x;
+    return $string;
   }
   else
   {
-    $y=substr($x,0,$length) . '...';
+    $y=substr($string,0,$length) . '...';
     return $y;
   }
 }
 
 // EXAMPLE 
 $string = 'long string text long string text long string text long string text long string text long string text long string text ';
-$limitString = limitText($string , 20);
 
-echo $limitString; // output = long string text lon...
+echo limitText($string , 20);
+// output = long string text lon...
 ?>
