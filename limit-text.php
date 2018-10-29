@@ -21,4 +21,3 @@ $string = 'long string text long string text long string text long string text l
 
 echo limitText($string , 20);
 // output = long string text lon...
-?>
